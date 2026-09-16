@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Arquitectura de la Plataforma Móvil",
+    "output": "arquitectura-plataforma-movil.html",
+    "quality_profile": "showcase",
+    "viewBox": [1200, 650],
+    "views": [
+      {
+        "id": "recorrido-principal",
+        "label": "Recorrido principal",
+        "focus": ["cliente-movil", "keycloak", "api-fastapi", "postgresql", "mongodb"],
+        "note": "Siga el inicio de sesión, las solicitudes de la aplicación y la persistencia de datos."
+      },
+      {
+        "id": "mapas",
+        "label": "Mapas y geolocalización",
+        "focus": ["cliente-movil", "api-fastapi", "mapas-leaflet"],
+        "note": "Revise el consumo de información geográfica y la visualización de mapas."
+      },
+      {
+        "id": "desarrollo",
+        "label": "Desarrollo y versiones",
+        "focus": ["docker", "docker-compose", "git", "github", "api-fastapi", "postgresql", "mongodb"],
+        "note": "Observe cómo el entorno local y el control de versiones respaldan la plataforma."
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "cliente-movil",
+      "type": "frontend",
+      "label": "Cliente móvil",
+      "sublabel": "Aplicación Flutter",
+      "tag": "Capa de cliente",
+      "pos": [50, 210],
+      "size": [155, 72]
+    },
+    {
+      "id": "keycloak",
+      "type": "security",
+      "label": "Autenticación",
+      "sublabel": "Keycloak",
+      "tag": "Capa de autenticación",
+      "pos": [285, 70],
+      "size": [160, 72]
+    },
+    {
+      "id": "api-fastapi",
+      "type": "backend",
+      "label": "API REST",
+      "sublabel": "FastAPI",
+      "tag": "Capa de API",
+      "brand": "fastapi",
+      "pos": [525, 210],
+      "size": [160, 72]
+    },
+    {
+      "id": "postgresql",
+      "type": "database",
+      "label": "Datos relacionales",
+      "sublabel": "PostgreSQL",
+      "tag": "Capa de datos",
+      "brand": "postgresql",
+      "pos": [770, 125],
+      "size": [160, 72]
+    },
+    {
+      "id": "mongodb",
+      "type": "database",
+      "label": "Datos documentales",
+      "sublabel": "MongoDB",
+      "tag": "Capa de datos",
+      "brand": "mongodb",
+      "pos": [770, 290],
+      "size": [160, 72]
+    },
+    {
+      "id": "mapas-leaflet",
+      "type": "external",
+      "label": "Servicio de mapas",
+      "sublabel": "Leaflet",
+      "tag": "Servicio externo",
+      "pos": [525, 410],
+      "size": [160, 72]
+    },
+    {
+      "id": "docker",
+      "type": "cloud",
+      "label": "Contenedores locales",
+      "sublabel": "Docker",
+      "tag": "Infraestructura de desarrollo",
+      "brand": "docker",
+      "pos": [50, 515],
+      "size": [170, 72]
+    },
+    {
+      "id": "docker-compose",
+      "type": "cloud",
+      "label": "Orquestación local",
+      "sublabel": "Docker Compose",
+      "tag": "Infraestructura de desarrollo",
+      "pos": [295, 515],
+      "size": [170, 72]
+    },
+    {
+      "id": "git",
+      "type": "external",
+      "label": "Control de versiones",
+      "sublabel": "Git",
+      "tag": "Control de versiones",
+      "pos": [580, 515],
+      "size": [160, 72]
+    },
+    {
+      "id": "github",
+      "type": "external",
+      "label": "Repositorio remoto",
+      "sublabel": "GitHub",
+      "tag": "Control de versiones",
+      "brand": "github",
+      "pos": [825, 515],
+      "size": [160, 72]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "security-group",
+      "label": "Límite de confianza: dispositivo del usuario",
+      "wraps": ["cliente-movil"],
+      "pad": 28
+    },
+    {
+      "kind": "security-group",
+      "label": "Límite de confianza: servicios de la plataforma",
+      "wraps": ["keycloak", "api-fastapi", "postgresql", "mongodb"],
+      "pad": 38
+    },
+    {
+      "kind": "region",
+      "label": "Entorno de desarrollo local",
+      "wraps": ["docker", "docker-compose"],
+      "pad": 28
+    },
+    {
+      "kind": "region",
+      "label": "Control de versiones compartido",
+      "wraps": ["git", "github"],
+      "pad": 28
+    }
+  ],
+  "connections": [
+    {
+      "id": "inicio-sesion",
+      "from": "cliente-movil",
+      "to": "keycloak",
+      "label": "Inicio de sesión y obtención de token",
+      "variant": "security"
+    },
+    {
+      "id": "solicitudes-api",
+      "from": "cliente-movil",
+      "to": "api-fastapi",
+      "label": "Solicitudes HTTPS con token",
+      "variant": "emphasis",
+      "labelAt": [365, 180]
+    },
+    {
+      "id": "validacion-token",
+      "from": "api-fastapi",
+      "to": "keycloak",
+      "label": "Validación de token",
+      "variant": "security"
+    },
+    {
+      "id": "datos-relacionales",
+      "from": "api-fastapi",
+      "to": "postgresql",
+      "label": "Consultas y persistencia relacional",
+      "labelAt": [728, 95]
+    },
+    {
+      "id": "datos-documentales",
+      "from": "api-fastapi",
+      "to": "mongodb",
+      "label": "Consultas y persistencia documental",
+      "labelAt": [728, 385]
+    },
+    {
+      "id": "consulta-mapas",
+      "from": "cliente-movil",
+      "to": "mapas-leaflet",
+      "label": "Visualización de mapas y geolocalización",
+      "variant": "dashed",
+      "labelAt": [300, 355]
+    },
+    {
+      "id": "orquestacion-contenedores",
+      "from": "docker-compose",
+      "to": "docker",
+      "label": "Define y levanta contenedores",
+      "labelAt": [258, 600]
+    },
+    {
+      "id": "versiones-locales",
+      "from": "git",
+      "to": "github",
+      "label": "Sincronización de cambios",
+      "labelAt": [783, 600]
+    }
+  ]
+}
