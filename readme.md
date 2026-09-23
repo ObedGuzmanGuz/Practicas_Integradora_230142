@@ -43,7 +43,7 @@
 
 | No. | Práctica                                         | Objetivo                                                                                                                         | Firmas |                                                            Evidencia                                                            |
 | :-: | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- | :----: | :-----------------------------------------------------------------------------------------------------------------------------: |
-|  02 | **Arquitectura de Plataforma Móvil con Archify** | Instalar y configurar Codex CLI y Archify para generar un modelo de arquitectura interactivo en español de una plataforma móvil. | **24** | [Ver arquitectura interactiva](https://obedguzmanguz.github.io/Practicas_Integradora_230142/arquitectura-plataforma-movil.html) |
+|  02 | **Arquitectura de Plataforma Móvil con Archify** | Instalar y configurar Codex CLI y Archify para generar un modelo de arquitectura interactivo en español de una plataforma móvil. | **24** | [Ver arquitectura interactiva](https://obedguzmanguz.github.io/Practicas_Integradora_230142/Practica02/arquitectura-plataforma-movil.html) |
 
 ---
 
