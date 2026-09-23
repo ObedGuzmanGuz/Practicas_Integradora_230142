@@ -13,7 +13,7 @@
 # 💻 Prácticas de Integradora
 
 <p align="center">
-  <img src="https://utxicotepec.edu.mx/wp-content/uploads/2025/03/LOGOS-CARRERAS-TI.png" alt="Ingeniería en Desarrollo y Gestión de Software" width="280">
+  <img src="/Logo_Area.png" alt="Ingeniería en Desarrollo y Gestión de Software" width="280">
 </p>
 
 <h2 align="center">Ingeniería en Desarrollo y Gestión de Software</h2>
