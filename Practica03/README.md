@@ -1,60 +1,57 @@
-# Boceto de Modelo Canvas con Archify
+<p align="center">
+  <img src="https://img.shields.io/badge/Pr%C3%A1ctica-03-blue?style=for-the-badge" alt="Práctica 03">
+  <img src="https://img.shields.io/badge/Archify-Modelo%20Canvas-orange?style=for-the-badge" alt="Archify">
+  <img src="https://img.shields.io/badge/HTML-5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML">
+  <img src="https://img.shields.io/badge/CSS-3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS">
+  <img src="https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/GitHub-Pages-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Pages">
+</p>
 
-**Actividad:** Spotify — Modelo de negocio Canvas  
-**Valor:** 10 firmas
+# Boceto de Modelo Canvas con Archify
 
 ## Objetivo
 
-Presentar un análisis académico del modelo de negocio de Spotify con los nueve bloques del Business Model Canvas. No es un Canvas oficial publicado por Spotify. La interfaz permite explorar cada bloque y consultar sus fundamentos, aplicación, ejemplo y relaciones.
+Desarrollar un **Business Model Canvas** de una aplicación multiplataforma de uso cotidiano mediante la creación y mejora de prompts utilizando Archify.
 
-## Aplicación elegida
+Para esta práctica se seleccionó **Spotify**, con el propósito de representar de manera visual e interactiva los nueve bloques principales del modelo Canvas y comprender cómo la plataforma crea, entrega y obtiene valor.
 
-Spotify es una plataforma de audio digital. Es multiplataforma porque permite acceder al servicio en aplicaciones móviles y de escritorio, reproductor web y dispositivos compatibles como televisores y consolas. La disponibilidad concreta varía según el dispositivo y el mercado; las fuentes consultadas se indican en [docs/fuentes.md](docs/fuentes.md).
+## Uso
 
-El Business Model Canvas organiza en nueve bloques la lógica con la que una organización crea, entrega y captura valor. En este boceto se diferencia la información documentada de las interpretaciones del análisis.
+El proyecto permite consultar de manera interactiva el **Modelo Business Canvas de Spotify**.
 
-## Herramientas y alcance
+Cada bloque del Canvas puede seleccionarse para visualizar información más detallada sobre aspectos como:
 
-- **Archify:** se utilizó para generar y validar un diagrama complementario del ecosistema de Spotify (`archify/spotify-ecosystem.html`). Archify en este entorno genera diagramas visuales de arquitectura/relaciones y no una cuadrícula Canvas interactiva con desarrollos A–F por bloque.
-- **Codex:** implementó la cuadrícula tradicional, el diseño adaptable, las fichas interactivas, la vista desarrollada continua, la impresión y la documentación. Todo el contenido de bloques reside en una sola estructura de datos de `index.html` y se reutiliza en tarjetas, fichas y vista completa.
-- **Tecnologías:** HTML, CSS y JavaScript nativos, sin dependencias ni servidor.
+- Segmentos de clientes.
+- Propuesta de valor.
+- Canales.
+- Relación con clientes.
+- Fuentes de ingresos.
+- Recursos clave.
+- Actividades clave.
+- Socios clave.
+- Estructura de costos.
 
-## Cómo abrir y usar
+La práctica también permite observar el proceso de mejora realizado desde el primer prompt hasta obtener una versión más completa y organizada del modelo.
 
-Abre `index.html` directamente en un navegador moderno. También puede publicarse como sitio estático conservando la estructura relativa de carpetas.
+## GitHub Pages
 
-- En computadora, deja el cursor sobre un bloque unos 300 ms para una vista previa amplia; haz clic para fijarla. Pulsa **Esc** o el botón de cierre para cerrar.
-- Con teclado, recorre las tarjetas con Tab y abre con Intro o Espacio. La ficha fijada mantiene el foco y lo devuelve al bloque al cerrarse.
-- En teléfono o pantalla estrecha, toca una tarjeta; la ficha usa una ventana adaptada al viewport.
-- **Ver contenido completo** presenta los nueve apartados en secuencia; **Volver al Canvas** regresa al tablero.
-- **Imprimir / Guardar como PDF** abre el diálogo de impresión del navegador. Los estilos imprimen las nueve fichas completas y ocultan controles.
+La práctica se encuentra publicada mediante **GitHub Pages** y puede visualizarse desde el siguiente enlace:
 
-## Contenido y evidencia
+🔗 **[Ver Práctica 03 - Modelo Canvas](https://obedguzmanguz.github.io/Practicas_Integradora_230142/Practica03/)**
 
-La carpeta [docs](docs/) documenta el prompt de partida, las observaciones y ajustes, el prompt mejorado y las fuentes consultadas el 23 de septiembre de 2026. Las capturas reales de revisión están en [evidencias](evidencias/): el Canvas completo, la ficha abierta, la vista móvil y `primer-boceto.png`, que conserva el primer planteamiento visual para comparar la revisión. La composición generada con Archify se conserva junto con el JSON y el recibo de su revisión visual en [archify](archify/).
+## Complementaciones
 
-## Revisión ejecutada
+Como parte del desarrollo de la práctica se realizaron las siguientes complementaciones:
 
-En Chrome con DevTools se comprobó la generación de nueve tarjetas; cada tarjeta mostró tres ideas y cada ficha incluyó tres preguntas, cinco o seis puntos de aplicación, ejemplo, relación y referencias. Se abrió y cerró la vista fijada con Escape, se confirmó el retorno de foco y se observó que hover abre sin mover el foco, mantiene el panel al llegar a él y cierra al salir. La vista continua contiene nueve bloques y 63 secciones (A–F más referencias). A 390 px el documento no presentó desbordamiento horizontal. La consola de Chrome no reportó excepciones durante estas comprobaciones.
+- Selección de **Spotify** como aplicación multiplataforma.
+- Elaboración de un primer prompt para generar el modelo Canvas.
+- Revisión del resultado obtenido.
+- Modificación y mejora del prompt inicial.
+- Desarrollo de los **nueve bloques del Business Model Canvas**.
+- Implementación de una interfaz interactiva para consultar cada sección.
+- Diseño adaptable para computadora y dispositivos móviles.
+- Integración de documentación y evidencias del proceso realizado.
+- Publicación del proyecto mediante **GitHub Pages**.
+- Uso de buenas prácticas para organizar los archivos dentro del repositorio.
 
-La activación física con Enter y el diálogo de impresión del navegador quedan pendientes de prueba manual; las tarjetas son botones nativos y los estilos de impresión están incluidos. El recibo de Archify conserva su revisión visual del diagrama en cuatro viewport.
-
-## Estructura
-
-```text
-index.html
-README.md
-docs/
-  prompt-inicial.md
-  revision.md
-  prompt-mejorado.md
-  fuentes.md
-archify/
-  spotify-ecosystem.html
-  spotify-ecosystem.architecture.json
-  spotify-ecosystem.visual-check.*
-evidencias/
-  canvas-completo.png
-  bloque-propuesta-abierto.png
-  vista-movil.png
-```
+La práctica fue desarrollada principalmente con **HTML, CSS y JavaScript**, utilizando **Archify** como apoyo para la generación y representación del modelo.
