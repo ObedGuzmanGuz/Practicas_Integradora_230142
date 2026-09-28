@@ -11,15 +11,23 @@
 
 ## Objetivo
 
-Desarrollar un **Business Model Canvas** de una aplicación multiplataforma de uso cotidiano mediante la creación y mejora de prompts utilizando Archify.
+Desarrollar un **Business Model Canvas** de una aplicación multiplataforma de uso cotidiano mediante la creación, revisión y mejora de prompts utilizando **Archify**.
 
-Para esta práctica se seleccionó **Spotify**, con el propósito de representar de manera visual e interactiva los nueve bloques principales del modelo Canvas y comprender cómo la plataforma crea, entrega y obtiene valor.
+Para esta práctica se seleccionó **Spotify**, con el propósito de representar de manera visual e interactiva los elementos principales que conforman su modelo de negocio.
+
+## ¿Qué es el Modelo Canvas?
+
+El **Business Model Canvas** es una herramienta visual utilizada para representar y analizar cómo funciona el modelo de negocio de una empresa o proyecto.
+
+Está compuesto por **nueve bloques** que permiten identificar aspectos como los clientes, la propuesta de valor, los recursos, actividades, socios, costos e ingresos de una organización.
+
+Su principal ventaja es que permite observar de manera sencilla y organizada cómo una empresa **crea, entrega y obtiene valor**.
 
 ## Uso
 
-El proyecto permite consultar de manera interactiva el **Modelo Business Canvas de Spotify**.
+El proyecto presenta de forma interactiva el **Modelo Business Canvas de Spotify**.
 
-Cada bloque del Canvas puede seleccionarse para visualizar información más detallada sobre aspectos como:
+Cada sección puede seleccionarse para consultar información relacionada con los nueve bloques:
 
 - Segmentos de clientes.
 - Propuesta de valor.
@@ -31,27 +39,45 @@ Cada bloque del Canvas puede seleccionarse para visualizar información más det
 - Socios clave.
 - Estructura de costos.
 
-La práctica también permite observar el proceso de mejora realizado desde el primer prompt hasta obtener una versión más completa y organizada del modelo.
+Además, la interfaz permite visualizar de manera más clara la relación entre las diferentes áreas que forman parte del modelo de negocio de Spotify.
+
+## Proceso de desarrollo
+
+Durante la realización de la práctica se siguieron las actividades solicitadas:
+
+1. Selección de una aplicación multiplataforma.
+2. Creación del prompt inicial para generar el Modelo Canvas.
+3. Revisión del resultado obtenido.
+4. Modificación y mejora del prompt.
+5. Documentación del proyecto y organización dentro del repositorio.
+
+Este proceso permitió mejorar progresivamente la estructura, contenido y presentación del modelo generado.
 
 ## GitHub Pages
 
-La práctica se encuentra publicada mediante **GitHub Pages** y puede visualizarse desde el siguiente enlace:
+La práctica se encuentra publicada mediante **GitHub Pages**:
 
 🔗 **[Ver Práctica 03 - Modelo Canvas](https://obedguzmanguz.github.io/Practicas_Integradora_230142/Practica03/)**
 
+## Tecnologías utilizadas
+
+- **Archify:** apoyo para la generación y representación del modelo.
+- **HTML:** estructura del contenido.
+- **CSS:** diseño y adaptación visual de la interfaz.
+- **JavaScript:** interacción entre los elementos del Canvas.
+- **Git y GitHub:** control de versiones y almacenamiento del proyecto.
+- **GitHub Pages:** publicación de la práctica como sitio web.
+
 ## Complementaciones
 
-Como parte del desarrollo de la práctica se realizaron las siguientes complementaciones:
+Como parte de la práctica también se agregaron algunas mejoras:
 
-- Selección de **Spotify** como aplicación multiplataforma.
-- Elaboración de un primer prompt para generar el modelo Canvas.
-- Revisión del resultado obtenido.
-- Modificación y mejora del prompt inicial.
-- Desarrollo de los **nueve bloques del Business Model Canvas**.
-- Implementación de una interfaz interactiva para consultar cada sección.
+- Modelo Canvas interactivo.
+- Desarrollo de los nueve bloques principales.
+- Información ampliada al seleccionar cada sección.
 - Diseño adaptable para computadora y dispositivos móviles.
-- Integración de documentación y evidencias del proceso realizado.
-- Publicación del proyecto mediante **GitHub Pages**.
-- Uso de buenas prácticas para organizar los archivos dentro del repositorio.
+- Organización de documentación y evidencias.
+- Mejora progresiva del prompt utilizado.
+- Publicación del proyecto mediante GitHub Pages.
 
-La práctica fue desarrollada principalmente con **HTML, CSS y JavaScript**, utilizando **Archify** como apoyo para la generación y representación del modelo.
+Con estas complementaciones, la práctica no solo presenta el Modelo Canvas de Spotify, sino también el proceso seguido para generar, revisar y mejorar el resultado obtenido.
