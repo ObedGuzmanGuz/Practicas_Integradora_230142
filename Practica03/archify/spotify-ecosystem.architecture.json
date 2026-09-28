@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Spotify: ecosistema del modelo de negocio",
+    "quality_profile": "showcase",
+    "viewBox": [1280, 735],
+    "views": [
+      { "id": "audiencia", "label": "Audiencia y propuesta", "focus": ["listeners", "platform", "rights"], "note": "Spotify conecta oyentes y creadores mediante descubrimiento, acceso y distribución." },
+      { "id": "monetizacion", "label": "Monetización", "focus": ["platform", "listeners", "advertisers"], "note": "Suscripciones Premium y publicidad sostienen los ingresos de la plataforma." },
+      { "id": "catalogo", "label": "Catálogo y distribución", "focus": ["rights", "platform", "listeners"], "note": "El catálogo se licencia a titulares de derechos y se distribuye a la audiencia." }
+    ]
+  },
+  "components": [
+    { "id": "rights", "type": "external", "label": "Creadores y titulares", "sublabel": "Artistas · sellos · editoras", "pos": [70, 300], "size": [220, 74] },
+    { "id": "platform", "type": "backend", "label": "Spotify", "sublabel": "Plataforma de audio", "tag": "Descubrimiento · streaming", "pos": [520, 300], "size": [230, 100] },
+    { "id": "listeners", "type": "external", "label": "Oyentes", "sublabel": "Gratis y Premium", "pos": [1010, 110], "size": [200, 74] },
+    { "id": "advertisers", "type": "external", "label": "Anunciantes", "sublabel": "Marcas y agencias", "pos": [1010, 540], "size": [200, 74] }
+  ],
+  "connections": [
+    { "id": "license", "from": "rights", "to": "platform", "label": "Licencias del catálogo", "variant": "security" },
+    { "id": "discover", "from": "platform", "to": "listeners", "label": "Audio y descubrimiento", "variant": "emphasis" },
+    { "id": "ad-funding", "from": "advertisers", "to": "platform", "label": "Inversión publicitaria", "variant": "dashed" }
+  ],
+  "cards": [
+    { "dot": "emerald", "title": "Usuarios", "items": ["Plan gratis financiado por publicidad", "Premium con más control y escucha sin anuncios"] },
+    { "dot": "violet", "title": "Contenido", "items": ["Música, pódcasts y audiolibros según mercado", "Acuerdos con sellos, editoras y distribuidores"] },
+    { "dot": "amber", "title": "Ingresos", "items": ["Suscripciones Premium", "Publicidad en el servicio gratuito"] }
+  ]
+}

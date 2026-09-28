@@ -1,0 +1,21 @@
+# Prompt mejorado para producir y revisar el Canvas
+
+Diseña una experiencia en español titulada **“Spotify — Modelo de negocio Canvas”**, adecuada para exposición universitaria y basada en fuentes oficiales consultables. Preséntala como análisis académico, no como un Canvas oficial de Spotify. Indica que la actividad se titula “Boceto de Modelo Canvas con Archify” y vale 10 firmas.
+
+Primero inspecciona el proyecto y el alcance real de Archify. Si Archify genera solamente diagramas de ecosistema o arquitectura, consérvalo como artefacto complementario y usa Codex/HTML, CSS y JavaScript para implementar el Canvas interactivo. Explica cada herramienta con precisión.
+
+Incluye una introducción breve que defina Spotify, explique su carácter multiplataforma con respaldo, describa el Business Model Canvas y enseñe a explorar las tarjetas. En el tablero muestra: “Pasa el cursor sobre un bloque o haz clic para explorar su contenido”.
+
+En escritorio usa la distribución tradicional: Socios clave a la izquierda abarcando dos filas; Actividades clave y Recursos clave en la segunda columna; Propuesta de valor central en dos filas; Relaciones con clientes y Canales en la cuarta columna; Segmentos de clientes al extremo derecho en dos filas; franja inferior con Estructura de costos e Ingresos. Da énfasis visual a la propuesta de valor. En tablet y teléfono refluye el tablero con texto legible.
+
+Mantén los nueve bloques en **una sola estructura de datos** y genera desde ella las tarjetas, fichas y vista continua. Cada tarjeta muestra icono, nombre completo, pregunta, entre dos y cuatro ideas y una invitación visible para abrir. Cada ficha contiene en este orden: A) definición sencilla, B) qué se escribe en cualquier Canvas, C) dos o tres preguntas, D) entre cuatro y seis puntos concretos sobre Spotify, E) ejemplo identificado como ilustrativo cuando sea hipotético, F) relación concreta con otro bloque.
+
+Desarrolla los nueve bloques con información específica y sin relleno: segmentos (oyentes gratuitos, suscriptores, anunciantes; diferenciar usuario, cliente y participantes como artistas/creadores), propuesta de valor (audio, descubrimiento, playlists, varios dispositivos, beneficios Premium sin generalizar sobre anuncios de pódcast), canales (distribución frente a promoción), relaciones (autoservicio, personalización, soporte, compartir; continuidad identificada como análisis), ingresos (Premium y publicidad, explicar freemium sin porcentajes o montos inventados), recursos (plataforma, derechos, recomendaciones, personas y marca; licencias no significan propiedad del catálogo), actividades (plataforma, streaming, acuerdos, recomendaciones, suscripciones y publicidad), socios (sellos, distribuidores/titulares, editoriales y tecnología con aportación de cada grupo) y costos (regalías/licencias, infraestructura, tecnología/personal, marketing/soporte/administración relacionados con actividades).
+
+En escritorio, abrir una ficha transitoria después de 300 ms de hover. Permite atravesar el espacio hacia la ficha y desplazarse sin cierre accidental. El clic fija la ficha; solo una abierta; cierre visible y Escape. Hover no mueve ni roba el foco. Teclado debe abrir y cerrar; en modal administra el foco, su ciclo y su retorno. En móvil abre al tocar con una ventana que se adapte a la pantalla. Respeta `prefers-reduced-motion`.
+
+Añade “Ver contenido completo”, “Volver al Canvas” e impresión del contenido desarrollado con controles ocultos y todos los apartados incluidos. Estética carbón/verde de alto contraste, jerarquía clara, transiciones breves y sin hero decorativo que empuje el tablero hacia abajo.
+
+Consulta fuentes oficiales concretas de Spotify, soporte, inversionistas/SEC y Strategyzer; registra título, URL directa, aporte y fecha real de consulta. Separa hechos de interpretaciones y no inventes datos, capturas ni resultados.
+
+Entrega HTML/CSS/JS local con rutas relativas, README, `docs/prompt-inicial.md`, `docs/revision.md`, `docs/prompt-mejorado.md`, `docs/fuentes.md`, artefactos de Archify y tres capturas reales: Canvas completo, ficha abierta y tamaño móvil. Conserva lo ajeno a la actividad. Revisa estructura, contenido, teclado, mouse, toque, vista completa, impresión, enlaces, desbordamiento adaptable y consola; registra solo las comprobaciones ejecutadas y corrige los problemas encontrados.
