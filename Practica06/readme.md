@@ -95,16 +95,27 @@ El diagrama fue desarrollado como una experiencia web interactiva e incluye:
 
 ## 🖥️ Tecnologías utilizadas
 
-El proyecto fue construido utilizando tecnologías web:
+El proyecto fue construido utilizando las siguientes tecnologías web:
 
-- HTML5
-- CSS3
-- JavaScript
-- Canvas API para partículas y efectos
-- CSS Animations
-- CSS Grid
-- CSS Flexbox
-- Diseño Responsive
+| Tecnología | Uso en el proyecto |
+|---|---|
+| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) | Se utilizó para crear la **estructura y contenido** de las páginas. |
+| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) | Se utilizó para definir los **estilos, colores, tamaños y diseño visual**. |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) | Se utilizó para agregar **interactividad, lógica y comportamiento dinámico**. |
+| ![Canvas API](https://img.shields.io/badge/Canvas_API-000000?style=for-the-badge&logo=html5&logoColor=white) | Se utilizó para generar **partículas, efectos visuales y elementos gráficos dinámicos**. |
+| ![CSS Animations](https://img.shields.io/badge/CSS_Animations-1572B6?style=for-the-badge&logo=css3&logoColor=white) | Se utilizó para crear **animaciones, transiciones y efectos visuales**. |
+| ![CSS Grid](https://img.shields.io/badge/CSS_Grid-1572B6?style=for-the-badge&logo=css3&logoColor=white) | Se utilizó para organizar los elementos mediante **cuadrículas y estructuras responsivas**. |
+| ![CSS Flexbox](https://img.shields.io/badge/CSS_Flexbox-1572B6?style=for-the-badge&logo=css3&logoColor=white) | Se utilizó para **alinear y distribuir los elementos** de la interfaz. |
+| ![Responsive Design](https://img.shields.io/badge/Responsive_Design-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white) | Se utilizó para adaptar la interfaz a **computadoras, tablets y dispositivos móviles**. |
+
+### 🛠️ Características principales
+
+- ✨ **Interfaz visual y dinámica**
+- 🎨 **Diseño moderno mediante CSS3**
+- 🌌 **Partículas y efectos mediante Canvas API**
+- 🎬 **Animaciones y transiciones**
+- 📱 **Diseño completamente responsive**
+- 🧩 **Organización mediante Grid y Flexbox**
 
 No requiere frameworks como React, Vue o Angular.
 
