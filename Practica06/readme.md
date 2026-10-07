@@ -121,7 +121,7 @@ El enlace permite visualizar directamente el diagrama interactivo publicado medi
 ```text
 Practica06/
 │
-├── diagram.html
+├── index.html
 └── README.md
 ```
 

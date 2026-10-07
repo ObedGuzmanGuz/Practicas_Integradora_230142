@@ -40,10 +40,13 @@
 ---
 
 ## 📋 Tabla de prácticas
+
 | No. | Práctica | Objetivo | Firmas | Evidencia |
 | :-: | -------- | -------- | :----: | :-------: |
 | 02 | **Arquitectura de Plataforma Móvil con Archify** | Instalar y configurar Codex CLI y Archify para generar un modelo de arquitectura interactivo en español de una plataforma móvil. | **24** | [Ver Carpeta](https://github.com/ObedGuzmanGuz/Practicas_Integradora_230142/tree/main/Practica02) |
 | 03 | **Modelo Canvas de Spotify con Archify** | Crear un modelo Canvas interactivo de Spotify con Archify y Codex, mostrando sus nueve bloques y su contenido completo al pasar el cursor o hacer clic. | **10** | [Ver Carpeta](https://github.com/ObedGuzmanGuz/Practicas_Integradora_230142/tree/main/Practica03) |
+| 06 | **Diagrama de Secuencia de Pantallas de Spotify** | Crear un diagrama interactivo de secuencia de pantallas para una aplicación móvil, utilizando sketches/wireframes y diferenciando los roles de Usuario/Oyente y Artista/Creador, con un total de 19 pantallas. | **20** | [Ver Carpeta](https://github.com/ObedGuzmanGuz/Practicas_Integradora_230142/tree/main/Practica06) |
+
 ---
 
 <p align="center">
